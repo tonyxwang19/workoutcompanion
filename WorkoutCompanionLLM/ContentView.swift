@@ -1,21 +1,38 @@
 //
 //  ContentView.swift
-//  WorkoutCompanionLLM
+//  runningdemo
 //
-//  Created by 王希宁的Macbook on 8/11/25.
+//  Created by 王希宁的Macbook on 8/8/25.
 //
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("首页")
+                }
+            
+            WorkoutGoalView()
+                .tabItem {
+                    Image(systemName: "figure.run")
+                    Text("运动")
+                }
+            
+            Text("历史记录")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("记录")
+                }
+            
+            Text("设置内容")
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("设置")
+                }
         }
-        .padding()
     }
 }
 
