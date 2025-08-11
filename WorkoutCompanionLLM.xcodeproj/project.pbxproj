@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F8D226892E49A3590058770C /* LLM in Frameworks */ = {isa = PBXBuildFile; productRef = F8D226882E49A3590058770C /* LLM */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F8D226422E4989960058770C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D226892E49A3590058770C /* LLM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = WorkoutCompanionLLM;
 			packageProductDependencies = (
+				F8D226882E49A3590058770C /* LLM */,
 			);
 			productName = WorkoutCompanionLLM;
 			productReference = F8D226342E4989940058770C /* WorkoutCompanionLLM.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = F8D2262B2E4989940058770C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F8D226872E49A3590058770C /* XCRemoteSwiftPackageReference "LLM" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8D226352E4989940058770C /* Products */;
 			projectDirPath = "";
@@ -577,6 +586,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8D226872E49A3590058770C /* XCRemoteSwiftPackageReference "LLM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eastriverlee/LLM.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8D226882E49A3590058770C /* LLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8D226872E49A3590058770C /* XCRemoteSwiftPackageReference "LLM" */;
+			productName = LLM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8D2262C2E4989940058770C /* Project object */;
 }

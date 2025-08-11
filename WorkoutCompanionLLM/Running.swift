@@ -65,7 +65,8 @@ struct RunningMapView: UIViewRepresentable {
     }
 }
 
-enum WorkoutType: String, CaseIterable {
+enum WorkoutType: String, CaseIterable, Codable {
+    
     case running = "跑步"
     case cycling = "骑行"
     

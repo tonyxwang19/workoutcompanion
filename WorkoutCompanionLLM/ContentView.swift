@@ -21,13 +21,13 @@ struct ContentView: View {
                     Text("运动")
                 }
             
-            Text("历史记录")
+            WorkoutRecordView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "list.bullet.rectangle")
                     Text("记录")
                 }
             
-            Text("设置内容")
+            SettingsView()
                 .tabItem {
                     Image(systemName: "gearshape.fill")
                     Text("设置")
